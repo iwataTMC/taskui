@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 import AppHeaderBar from './AppHeaderBar';
+import AppFooter from './AppFooter';
 
 export default function MainPage() {
   const navigate = useNavigate();
@@ -15,6 +16,8 @@ export default function MainPage() {
       <Button variant="contained" onClick={() => navigate(`/${uuid}`)}>
         NEW BOARD
       </Button>
+      <br />
+      <AppFooter />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import './App.css';
 import AppHeaderBar from './AppHeaderBar';
 import QRCode from 'qrcode.react';
+import AppFooter from './AppFooter';
 
 export default function BoardPage() {
   const navigate = useNavigate();
@@ -103,6 +104,7 @@ export default function BoardPage() {
           <li key={index}>{comment}</li>
         ))}
       </ul>
+      <AppFooter />
     </>
   );
 }
