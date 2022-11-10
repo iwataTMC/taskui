@@ -43,8 +43,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `npm run deploy`
 You can publish your application on GitHub pages by executing this command.
 When you have finished editing the source code, be sure to run this command before `git add` & `git commit` & `git push`.
-> **Warning**
-> This command will delete the `gh-pages` branch and recreate it.
+> **Warning**.  
+> This command will delete the `gh-pages` branch and recreate it.  
 > If you forget, it will not be reflected in the GitHub pages.
 
 ## Learn More
