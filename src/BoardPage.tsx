@@ -18,16 +18,27 @@ export default function BoardPage() {
     }
   };
 
+  function clickURLCopy() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url);
+    alert('URLをコピーしました\n' + url);
+  }
+
   return (
     <>
       <AppHeaderBar />
       <Typography variant="h3">BoardPage</Typography>
-      <Typography variant="h5">Board-ID:`{uuid}`</Typography>
+      <Typography variant="h5">Board-ID : {uuid}</Typography>
+      <Button variant="contained" onClick={clickURLCopy}>
+        URL COPY
+      </Button>
+      <br />
+      <br />
       <Button
         variant="contained"
         onClick={() => navigate(`/ReactTypeScriptDemo/`)}
       >
-        MainPage
+        MAIN PAGE
       </Button>
       <br />
       <br />
@@ -38,7 +49,7 @@ export default function BoardPage() {
           setTitle('');
         }}
       >
-        AllClearComments
+        All CLEAR COMMENTS
       </Button>
       <br />
       <br />
@@ -58,10 +69,8 @@ export default function BoardPage() {
           onChange={(e) => setTitle(e.target.value)}
         />
       </Box>
-
       <br />
       <br />
-
       <Box
         sx={{
           width: 500,
@@ -78,7 +87,7 @@ export default function BoardPage() {
         ></TextField>
       </Box>
       <Button variant="contained" onClick={inputComment}>
-        コメントを追加
+        ADD COMMENT
       </Button>
       <br />
       <br />

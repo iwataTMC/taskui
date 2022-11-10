@@ -13,7 +13,7 @@ export default function MainPage() {
       <AppHeaderBar />
       <Typography variant="h3">MainPage</Typography>
       <Button variant="contained" onClick={() => navigate(`/${uuid}`)}>
-        NewBoard
+        NEW BOARD
       </Button>
     </>
   );
