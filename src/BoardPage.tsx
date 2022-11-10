@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import './App.css';
 import AppHeaderBar from './AppHeaderBar';
+import QRCode from 'qrcode.react';
 
 export default function BoardPage() {
   const navigate = useNavigate();
@@ -18,8 +19,9 @@ export default function BoardPage() {
     }
   };
 
+  const url = window.location.href;
+
   function clickURLCopy() {
-    const url = window.location.href;
     navigator.clipboard.writeText(url);
     alert('URLをコピーしました\n' + url);
   }
@@ -29,6 +31,10 @@ export default function BoardPage() {
       <AppHeaderBar />
       <Typography variant="h3">BoardPage</Typography>
       <Typography variant="h5">Board-ID : {uuid}</Typography>
+      <br />
+      <QRCode value={url} />
+      <br />
+      <br />
       <Button variant="contained" onClick={clickURLCopy}>
         URL COPY
       </Button>
