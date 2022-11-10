@@ -17,6 +17,12 @@ object-assign
  */
 
 /**
+ * @license qrcode.react
+ * Copyright (c) Paul O'Shannessy
+ * SPDX-License-Identifier: ISC
+ */
+
+/**
  * @remix-run/router v1.0.3
  *
  * Copyright (c) Remix Software Inc.
