@@ -1,4 +1,11 @@
-import { Box, Button, TextField, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  TextField,
+  Typography,
+} from '@mui/material';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import './App.css';
@@ -33,7 +40,14 @@ export default function BoardPage() {
       <Typography variant="h3">BoardPage</Typography>
       <Typography variant="h5">Board-ID : {uuid}</Typography>
       <br />
-      <QRCode value={url} />
+      <Card variant="outlined" style={{ width: 200, textAlign: 'center' }}>
+        <CardContent>
+          <Typography variant="h6" color="text.secondary">
+            QR reading
+          </Typography>
+          <QRCode value={url} />
+        </CardContent>
+      </Card>
       <br />
       <br />
       <Button variant="contained" onClick={clickURLCopy}>
