@@ -23,7 +23,7 @@ export default function BoardPage() {
       <ButtonAppBar />
       <Typography variant="h3">BoardPage</Typography>
       <Typography variant="h5">Board-ID:`{uuid}`</Typography>
-      <Button variant="contained" onClick={() => navigate(`/`)}>
+      <Button variant="contained" onClick={() => navigate(`/ReactTypeScriptDemo/`)}>
         MainPage
       </Button>
       <br />

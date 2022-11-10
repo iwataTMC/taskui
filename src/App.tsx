@@ -7,7 +7,7 @@ import MainPage from './MainPage';
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<MainPage />} />
+      <Route path="ReactTypeScriptDemo/" element={<MainPage />} />
       <Route path="/:id" element={<BoardPage  />} />
     </Routes>
   );
