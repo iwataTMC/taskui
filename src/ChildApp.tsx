@@ -4,8 +4,6 @@ import './App.css';
 export default function ChildApp() {
   const [count, setCount] = useState(0);
 
-
-
   return (
     <div className="ChildApp">
       <main>

@@ -1,11 +1,10 @@
 
-
 .App-header {
-  background-color: #75fab5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 18px;
+    background-color: #75fab5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
 }

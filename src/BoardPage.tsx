@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import './App.css';
-import ButtonAppBar from './ButtonAppBar';
+import AppHeaderBar from './AppHeaderBar';
 
 export default function BoardPage() {
   const navigate = useNavigate();
@@ -20,10 +20,13 @@ export default function BoardPage() {
 
   return (
     <>
-      <ButtonAppBar />
+      <AppHeaderBar />
       <Typography variant="h3">BoardPage</Typography>
       <Typography variant="h5">Board-ID:`{uuid}`</Typography>
-      <Button variant="contained" onClick={() => navigate(`/ReactTypeScriptDemo/`)}>
+      <Button
+        variant="contained"
+        onClick={() => navigate(`/ReactTypeScriptDemo/`)}
+      >
         MainPage
       </Button>
       <br />

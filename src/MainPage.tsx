@@ -2,7 +2,7 @@ import { Button, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import './App.css';
-import ButtonAppBar from './ButtonAppBar';
+import AppHeaderBar from './AppHeaderBar';
 
 export default function MainPage() {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ export default function MainPage() {
   const uuid = uuidv4();
   return (
     <>
-      <ButtonAppBar />
+      <AppHeaderBar />
       <Typography variant="h3">MainPage</Typography>
       <Button variant="contained" onClick={() => navigate(`/${uuid}`)}>
         NewBoard
