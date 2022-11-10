@@ -77,6 +77,9 @@ export default function BoardPage() {
       <Button variant="contained" onClick={inputComment}>
         コメントを追加
       </Button>
+      <br />
+      <br />
+      <Typography variant="h5">Comments List</Typography>
       <ul>
         {comments.map((comment, index) => (
           <li key={index}>{comment}</li>

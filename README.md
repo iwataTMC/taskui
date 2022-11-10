@@ -39,6 +39,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+
+### `npm run deploy`
+You can publish your application on GitHub pages by executing this command.
+When you have finished editing the source code, be sure to run this command before `git add` & `git commit` & `git push`.
+> **Warning**
+> This command will delete the `gh-pages` branch and recreate it.
+> If you forget, it will not be reflected in the GitHub pages.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
